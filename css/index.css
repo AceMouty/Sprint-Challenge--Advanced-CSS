@@ -167,6 +167,10 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
+  opacity: 0.9;
+}
+.navigation:hover {
+  opacity: 1;
 }
 .navigation h1 {
   width: 100%;
