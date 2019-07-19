@@ -1,1 +1,39 @@
 // Navigation code here
+
+.navigation{
+	// border: 2px solid red;
+	.flexWrap();
+
+	h1{
+		width: 100%;
+		text-align: center;
+		font-size: 4rem;
+		margin: 2rem 0;
+	}
+
+	.nav-container{
+		// border: 2px solid purple;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		nav{
+			// border: 2px solid green;
+			width: 25%;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 1rem;
+			
+			a{
+				text-decoration: none;
+				font-size: 1.8rem;
+				font-weight: bold;
+				color: @ebony-clay;
+
+				&:hover{
+					color: @waterloo;
+				}
+			}
+		}
+	}
+}

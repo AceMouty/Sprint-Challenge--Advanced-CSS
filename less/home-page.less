@@ -58,6 +58,14 @@
       }
 
       .btn {
+				// border: 2px solid red;
+				text-decoration: none;
+				display: inline-block;
+				.btn(@btn-bg-color, @wild-sand);
+				
+				&:hover{
+					.btn(@wild-sand, @btn-bg-color);
+				}
       }
     }
 
