@@ -1,1 +1,29 @@
 // Mixins Here
+
+// Global Header Mixin
+.headers(){
+	font-family: 'Russo One', sans-serif;
+  color: @header-font-color;
+}
+
+// =============================
+// Other Mixins
+// =============================
+
+.flexWrap(){
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+// Button
+.btn(@background, @color){
+		font-size: 2rem;
+		font-weight: bold;
+		width: 30%;
+		text-align: center;
+		padding: .5rem 0;
+		border-radius: .3rem;
+		background-color: @background;
+		color: @color;
+}

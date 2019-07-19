@@ -1,1 +1,54 @@
 // Navigation code here
+
+.navigation{
+	// border: 2px solid red;
+	.flexWrap();
+	background-color: #f4f4f4;
+
+	// Stretch Fixed nav
+	position: fixed;
+	top: 0;
+	width: 100%;
+	opacity: 0.9;
+
+	&:hover{
+		opacity: 1.0;
+	}
+
+	h1{
+		width: 100%;
+		text-align: center;
+		font-size: 4rem;
+		margin: 2rem 0;
+	}
+
+	.nav-container{
+		// border: 2px solid purple;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+		nav{
+			// border: 2px solid green;
+			width: 25%;
+			display: flex;
+			justify-content: space-around;
+			margin-bottom: 1rem;
+
+			@media @phone{
+				width: 100%;
+			}
+			
+			a{
+				text-decoration: none;
+				font-size: 1.8rem;
+				font-weight: bold;
+				color: @ebony-clay;
+
+				&:hover{
+					color: @waterloo;
+				}
+			}
+		}
+	}
+}
