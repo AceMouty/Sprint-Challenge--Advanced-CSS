@@ -34,13 +34,39 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+	Adaptive Design: Adaptive design use's pre-selected HTML for different devices, the web server will decide this based on the device making the HTTP request. Information displayted is pre-selected and only specific device based information is shown to the user. Multiple pages/templates must be made for different types of devices
+
+	Responsive Design: User devices are detected by the use of media queries. Page content is sized and reorganized accordingly for each type of device. All content is loaded to the devices browser wether it is visable to the user or not, and lastly there is only one page / template that gets made that all devices will use.
+
+
+
 2. Describe what it means to be mobile first vs desktop first.
+
+	Desktop First Design: Desktop design means you will be writting code for a desktop device first. You will shrink layout and hide content as needed when you begin to LOSE screen realestate moving to tablets and other mobile devices. Your genral styling will be aimed at desktops. Media queries will often use the `max-width` propety to discover the screen size of a device.
+
+	Mobile Design: A mobile design works in the opposite direction. You will write code with a mobile layout first, you will begin to expand your layout and show more content as you gain MORE screen relestate. Your genral styling will be aimed at mobile devices. Media queries will often use the `min-width` property to discover the screen size of a device.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+	When setting the `html` tag to a `font-size: 62.5%` you are setting it to 10px but with using a responsive unit. When you use the `rem` unit you access the `root element` aka the `html` tag which holds a font size of `62.5%` which is `10px` in a % form. So if you say `font-size: 1rem` you are setting the font size to 10px in a % form, if you were to set `font-size: 3rem;` that would be 30px in % form bc our bas is 10px multiplied by 3 which gives us 30px.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+	Preprocessing allows us to write code in a more reusable,scaleable,and readable way. 
+	
+	If using less you will use NodeJS with a less compiler to compile your code from less down to CSS for the browser to use. You no longer will be writting in a CSS file but in a LESS file. 
+	
+	Our code becomes more readable bc the nesting follows the same flow as your HTML, Code is more scalable bc we have access to LESS variables which can hold a single value such as a color, font family or even a unit such as %, em, rem, vh, and vw. 
+	
+	We also have mixins and parametric mixins. These are sets of CSS properties and values, this gives us the power to write many styles in one place and apply them where we see fit. However parametric mixins do not have predetermined values you must provide the value to be assigned to a property. 
+
+	Lastly there is escaping. This can be used to predifne media query break points and applied every where in your code, and if there is a change in device width break points you only have to change the escaped value and it will affect in every spot you are using that specific escaped break point.
+	
+	All of this makes code more scaleable and manageable bc we now have reuseable pieces of code that we change in one line and affect many lines with. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+	My favortie part of preprocessing is mixins. And the concept that gives me the most trouble is learning when to create and use a parametric mixin.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
