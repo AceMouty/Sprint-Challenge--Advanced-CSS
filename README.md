@@ -52,7 +52,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 4. How would you describe preprocessing to someone new to CSS?
 
-	Preprocessing allows us to write code in a more reusable,scaleable,and readable way. 
+	TL;DR Preprocessing allows us to write code in a more reusable,scaleable,and readable way. 
 	
 	If using less you will use NodeJS with a less compiler to compile your code from less down to CSS for the browser to use. You no longer will be writting in a CSS file but in a LESS file. 
 	
