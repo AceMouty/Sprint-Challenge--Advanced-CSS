@@ -163,6 +163,10 @@ p {
 .navigation {
   display: flex;
   flex-wrap: wrap;
+  background-color: #f4f4f4;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navigation h1 {
   width: 100%;
@@ -204,6 +208,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  margin-top: 11rem;
 }
 .home .intro h2 {
   padding: 15px;
